@@ -1,6 +1,6 @@
 public class ContaPoupanca : Conta
 {
-    private const double TaxaDeRendimento = 0.005; // 0.5% de rendimento
+    private const double TaxaDeRendimento = 0.005; 
 
     public ContaPoupanca(string numeroConta, double saldoInicial) : base(numeroConta, saldoInicial)
     {
