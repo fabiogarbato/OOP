@@ -41,14 +41,12 @@ public class ContaCorrente : Conta
 
     public override void Depositar(double valor)
     {
-        // Lógica específica para depósito em ContaCorrente
         Saldo += valor;
         RegistrarTransacao($"Depósito de R${valor}");
     }
 
     public override void Sacar(double valor)
     {
-        // Lógica específica para saque em ContaCorrente
         if (valor > Saldo)
         {
             throw new InvalidOperationException("Saldo insuficiente.");
